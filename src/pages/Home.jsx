@@ -10,7 +10,7 @@ const Home = () => {
    let [fetchedData, updateFetchData] = useState([]);
    let [search, setSearch] = useState("");
 
-   let { info, results } = fetchedData
+   let { info, results = [] } = fetchedData
 
    let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 

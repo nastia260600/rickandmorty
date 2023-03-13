@@ -2,7 +2,7 @@ import './cards.scss'
 import { NavLink } from "react-router-dom";
 
 const Cards = ({ results, page }) => {
-   /*let sortResults = results.sort(function (a, b) {
+   let sortResults = results.sort(function (a, b) {
       if (a.name > b.name) {
          return 1;
       }
@@ -10,11 +10,11 @@ const Cards = ({ results, page }) => {
          return -1;
       }
       return 0;
-   })*/
+   })
 
    let display;
    if (results) {
-      display = results.map(el => {
+      display = sortResults.map(el => {
          let { id, name, image, species } = el;
          return (
             <NavLink to={`${page}${id}`} key={id} className="card" style={{ textDecoration: "none", color: "#000" }}>
