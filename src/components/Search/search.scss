@@ -1,0 +1,31 @@
+.search {
+   margin-bottom: 50px;
+   position: relative;
+   &__input {
+      height: 50px;
+      box-sizing: border-box;
+      padding-left: 45px;
+
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      width: 100%;
+
+      font-size: 16px;
+      line-height: 150%;
+      color: rgba(0, 0, 0, 0.5);
+      &:focus {
+         outline: none;
+      }
+   }
+}
+.icon {
+   height: 1.5rem;
+   width: 1.5rem;
+   background-image: url("./searchIcon.png");
+   padding: 4px;
+   position: absolute;
+   box-sizing: border-box;
+   top: 50%;
+   left: 15px;
+   transform: translateY(-50%);
+}

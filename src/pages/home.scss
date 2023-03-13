@@ -1,0 +1,21 @@
+* {
+   font-family: "Roboto";
+}
+.container {
+   max-width: 1020px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 0 10px;
+}
+.logo {
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+   margin-bottom: 20px;
+   @media (max-width: 768px) {
+      max-width: 500px;
+   }
+}
+p {
+   margin: 0;
+}
